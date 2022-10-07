@@ -5,6 +5,7 @@ import { StyleSheet } from "react-native";
 //Custom Components
 import MiddleContainer from "./components/MiddleContainer";
 import ProfileHeader from "./components/ProfileHeader";
+import AppSectionList from "./components/AppSectionList";
 
 // Define the config
 const config = {
@@ -26,7 +27,9 @@ export default function App() {
           <ProfileHeader />
         </View>
         <MiddleContainer />
-        <View bg="dark.900" style={Style.body}></View>
+        <View bg="dark.900" style={Style.body}>
+          <AppSectionList />
+        </View>
       </View>
     </NativeBaseProvider>
   );
@@ -35,6 +38,8 @@ export default function App() {
 const Style = StyleSheet.create({
   body: {
     height: "70%",
+    justifyContent: "center",
+    alignItems: "center",
   },
   header: {
     height: "30%",
