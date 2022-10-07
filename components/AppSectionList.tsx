@@ -12,7 +12,7 @@ import { FontAwesome } from "@expo/vector-icons";
 
 const AppSectionList = () => {
   return (
-    <Center h="95%" w="100%">
+    <Center h="90%" w="100%">
       <ScrollView w={"100%"} h="80" showsVerticalScrollIndicator={false}>
         <View mt="3" mb="4">
           <Heading fontSize="lg" m={5}>
@@ -157,7 +157,6 @@ const AppSectionList = () => {
           </View>
         </VStack>
       </ScrollView>
-      ;
     </Center>
   );
 };

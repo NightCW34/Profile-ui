@@ -6,7 +6,7 @@ import { StyleSheet } from "react-native";
 import MiddleContainer from "./components/MiddleContainer";
 import ProfileHeader from "./components/ProfileHeader";
 import AppSectionList from "./components/AppSectionList";
-
+import BottomTab from "./components/BottomTab";
 // Define the config
 const config = {
   useSystemColorMode: false,
@@ -29,6 +29,7 @@ export default function App() {
         <MiddleContainer />
         <View bg="dark.900" style={Style.body}>
           <AppSectionList />
+          <BottomTab />
         </View>
       </View>
     </NativeBaseProvider>
